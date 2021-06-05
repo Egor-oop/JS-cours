@@ -46,3 +46,101 @@ if ((a3 >= null) & (b3 >= null)) {
 } else {
   console.log(a3 + b3);
 }
+
+/* 4. Присвоить переменной а
+значение в промежутке [0..15].
+С помощью оператора switch
+организовать вывод чисел от
+a до 15. */
+console.log("4 задание");
+
+function numbersDance(a) {
+  switch (a) {
+    case 0:
+      return "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
+    case 1:
+      return "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
+    case 2:
+      return "2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
+    case 3:
+      return "3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
+    case 4:
+      return "4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
+    case 5:
+      return "5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
+    case 6:
+      return "6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
+    case 7:
+      return "7, 8, 9, 10, 11, 12, 13, 14, 15";
+    case 8:
+      return "8, 9, 10, 11, 12, 13, 14, 15";
+    case 9:
+      return "9, 10, 11, 12, 13, 14, 15";
+    case 10:
+      return "10, 11, 12, 13, 14, 15";
+    case 11:
+      return "11, 12, 13, 14, 15";
+    case 12:
+      return "12, 13, 14, 15";
+    case 13:
+      return "13, 14, 15";
+    case 14:
+      return "14, 15";
+    case 15:
+      return "15";
+    default:
+      return "Неизвестное число";
+  }
+}
+
+console.log(numbersDance(0));
+
+/* 5. Реализовать основные 4
+арифметические операции в виде
+функций с двумя параметрами.
+Обязательно использовать оператор
+return. */
+console.log("5 задание");
+
+function fourOperations(num1, num2) {
+  let plus = num1 + num2;
+  let minus = num1 - num2;
+  let multiplication = num1 * num2;
+  let division = num1 / num2;
+  return `	Сложение - ${plus},
+	Вычитание - ${minus},
+	Умножение - ${multiplication},
+	Деление - ${division}`;
+}
+
+console.log(fourOperations(6, 3));
+
+/* 6. Реализовать функцию с
+тремя параметрами: function
+mathOperation(arg1, arg2, operation),
+где arg1, arg2 – значения аргументов,
+operation – строка с названием
+операции. В зависимости от
+переданного значения операции
+выполнить одну из арифметических
+операций (использовать функции из
+пункта 5) и вернуть полученное
+значение (использовать switch). */
+console.log("6 задние");
+
+function mathOperation(arg1, arg2, operation) {
+  switch (operation) {
+    case "сложение":
+      return arg1 + arg2;
+    case "вычитание":
+      return arg1 - arg2;
+    case "умножение":
+      return arg1 * arg2;
+    case "деление":
+      return arg1 / arg2;
+    default:
+      return "Неизвестная операция";
+  }
+}
+
+console.log(mathOperation(74, 48, "сложение"));
